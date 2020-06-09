@@ -15,6 +15,6 @@
 
 #Issue Faced:<br>
 1.IN resize_image.py Matplotlip not showing plot for that make sure python3-tk is installed<br>
-otherwise do:<h3 style="background-color:grey;width:300px;height:200px">sudo apt-get install python3-tk<br>
+otherwise do:<h6 style="background-color:lightgrey">sudo apt-get install python3-tk<br>
    
   
