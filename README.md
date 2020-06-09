@@ -9,7 +9,7 @@
 
 |--- Video_Manipulation<br>
 |    |---line & roi selection_on_video.py (select ROI an draw Line on video Feed )<br>
-|    |---video_playback_rtsp.py (stream rtsp field using opencv)<br>
+|    |---video_playback_rtsp.py (stream rtsp feed using opencv)<br>
 |    |---video_writer_usb_csmera.py (stream and record video from usb camera)<br>
 
 
