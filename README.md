@@ -1,9 +1,9 @@
-# Over_view of structuring and usages of script
+# Overview of structure and usages
 
 |--- Image_Manipulation<br>
 |    |---height_width_image.py (gives dimension of image i.e height.width.channel)<br>
 |    |---img_read_write_display.py (simply read an image display it and stroning with new name & extension)<br>
-|    |---resize_image.py (various methods to resize the image)<br>
+|    |---resize_image.py (various methods to resize the image)<br><br>
 
 
 
@@ -16,6 +16,10 @@
 #Issue Faced:<br>
 1.IN resize_image.py Matplotlip not showing plot for that make sure python3-tk is installed<br>
 otherwise do:<br>
-sudo apt-get install python3-tk<br>
+<h6 style="background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;"> sudo apt-get install python3-tk<br>
   
   
