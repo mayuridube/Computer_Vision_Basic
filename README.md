@@ -13,7 +13,7 @@
 |    |---video_writer_usb_csmera.py (stream and record video from usb camera)<br>
 
 
-#Issue Faced:<br>
+<h5>Issue Faced:<br>
 1.IN resize_image.py Matplotlip not showing plot for that make sure python3-tk is installed<br>
 otherwise do:<h6 style="background-color:lightgrey">sudo apt-get install python3-tk<br>
    
