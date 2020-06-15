@@ -2,7 +2,7 @@
 
 |--- image_Manipulation<br>
 |    |---height_width_image.py (gives dimension of image i.e height.width.channel)<br>
-|    |---img_read_write_display.py (simply read an image display it and stroning with new name & extension)<br>
+|    |---img_read_write_display.py (simply read an image display it and storing with new name & extension)<br>
 |    |---resize_image.py (various methods to resize the image)<br><br>
 
 
