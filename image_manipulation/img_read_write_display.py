@@ -15,6 +15,6 @@ if k == 27:         # wait for ESC key to exit
 # wait for 's' key to save and exit.
 elif k == ord('s'):
     # image write
-    cv2.imwrite('store_image.jpg', img)
+    cv2.imwrite('./output_images/store_image.jpg', img)
     print("Image write successfully")
     cv2.destroyAllWindows()
