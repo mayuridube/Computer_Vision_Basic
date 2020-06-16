@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #importing the required libraries
 
 import numpy as np
@@ -16,7 +16,7 @@ M = cv2.getRotationMatrix2D((cols/2,rows/2),90,1)
 dst = cv2.warpAffine(image,M,(cols,rows))
 plt.imshow(dst)
 cv2.imwrite('../output_images/rotated_image.jpg',dst)
-=======
+
 #importing the required libraries 
 
 import numpy as np 
@@ -32,5 +32,5 @@ rows,cols = image.shape[:2]
 M = cv2.getRotationMatrix2D((cols/2,rows/2),90,1) 
 dst = cv2.warpAffine(image,M,(cols,rows)) 
 plt.imshow(dst)
->>>>>>> origin/master
+
 plt.show()
