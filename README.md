@@ -6,7 +6,7 @@
 |    |---height_width_image.py (gives dimension of image i.e height.width.channel)<br>
 |    |---image_rotation.py (gives dimension of image i.e height.width.channel)<br>
 |    |---img_read_write_display.py (simply read an image display it and storing with new name & extension)<br>
-|    |---img_thresholding.py (Different method for thresholding image,used to divide the image into it’s foreground and <br> |  |        background.)<br>
+|    |---img_thresholding.py (Different method for thresholding image,used to divide the image into it’s foreground and <br>   |        background.)<br>
 |    |---resize_image.py (various methods to resize the image)<br><br>
 
 
