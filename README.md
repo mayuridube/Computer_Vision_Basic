@@ -1,7 +1,6 @@
 # Overview of structure and usages
 
 |--- image_Manipulation<br>
-|    |---SIFT_algo(Scale Invariant Feature Transform (SIFT) is a very popular keypoint detection algorithm)<br>
 |    |---edge_detection.py (Detect edges from image,edges are nothing but point where pixel get change)<br>
 |    |---height_width_image.py (gives dimension of image i.e height.width.channel)<br>
 |    |---image_rotation.py (gives dimension of image i.e height.width.channel)<br>
