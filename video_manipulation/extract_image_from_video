@@ -19,5 +19,5 @@ while True:
     currentframe +=1
   else:
     break
-cap.release()
+
 cv2.destroyAllWindows()
