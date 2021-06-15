@@ -22,7 +22,7 @@ Usage: python3 resize_image.py<br><br>
 
 
 
-<h5>video_Manipulation</h5>
+<h5>video_manipulation</h5>
 1.extract_image_from_video.py<br>
 read video and convert into images and save it in data folder<br>
 Usage:add video file path in script & Run python3 extract_image_from_video.py<br>
