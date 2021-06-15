@@ -1,20 +1,39 @@
 # Overview of structure and usages
 
-|--- image_Manipulation<br>
-|    |---edge_detection.py (Detect edges from image,edges are nothing but point where pixel get change)<br>
-|    |---height_width_image.py (gives dimension of image i.e height.width.channel)<br>
-|    |---image_rotation.py (gives dimension of image i.e height.width.channel)<br>
-|    |---img_read_write_display.py (simply read an image display it and storing with new name & extension)<br>
-|    |---img_thresholding.py (Different method for thresholding image,used to divide the image into it’s foreground and <br>   |        background.)<br>
-|    |---resize_image.py (various methods to resize the image)<br><br>
+<h5>image_manipulation</h5>
+1.edge_detection.py<br>
+Detect edges from image,edges are nothing but point where pixel get change<br>
+Usage: python3 edge_detection.py<br>
+2.height_width_image.py<br>
+Gives dimension of image i.e height,width,channel<br>
+Usage: python3 height_width_image.py<br>
+3.image_rotation.py<br>
+Rotate the image in anticlockwise.<br> 
+Usage: python3 image_rotation.py<br>
+4.img_read_write_display.py<br>
+simply read an image display it and storing with new name & extension<br>
+Usage: python3 img_read_write_display<br>
+5.img_thresholding.py<br>
+Different method for thresholding the image,used to divide the image into it’s foreground and background.<br>
+usage: python3 img_thresholding.py<br>
+6.resize_image.py<br>
+various methods to resize the image<br>
+Usage: python3 resize_image.py<br><br>
 
 
 
-|--- video_Manipulation<br>
-|    |---extract_image_from_video.py(read video and convert into images and save it)<br>
-|    |---line & roi selection_on_video.py (select ROI an draw Line on video Feed )<br>
-|    |---video_playback_rtsp.py (stream rtsp feed using opencv)<br>
-|    |---video_writer_usb_csmera.py (stream and record video from usb camera)<br>
+<h5>video_Manipulation</h5>
+1.extract_image_from_video.py<br>
+read video and convert into images and save it in data folder<br>
+Usage:add video file path in script & Run python3 extract_image_from_video.py<br>
+2.line & roi selection_on_video.py<br>
+select ROI an draw Line on video Feed<br>
+3.video_playback_rtsp.py<br>
+stream rtsp feed using opencv<br>
+Usage:add rtsp link in script & Run python3 video_playback_rtsp.py<br>
+4.video_writer_usb_csmera.py<br>
+stream and record video from usb camera<br>
+Usage:python3 video_writer_usb_csmera.py<br>
 
 
 <h5>Issue Faced:</h5>
