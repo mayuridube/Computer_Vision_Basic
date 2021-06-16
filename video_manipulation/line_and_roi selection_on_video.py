@@ -38,6 +38,11 @@ def line(event, x, y, flags, param):
     if event == cv2.EVENT_LBUTTONUP and mouse_down:
         vx, vy = x, y
         mouse_down = False
+        print(f"line coordinates are:")
+        print(f"x:{ix}")
+        print(f"y:{iy}")
+        print(f"x1:{vx}")
+        print(f"y1:{vy}")
         mouse_flag = 2
 
 
@@ -48,15 +53,20 @@ while True:
     frame = imutils.resize(frame, width=800)
     # draw roi on first frame only
     # if imCrop is None:
-    k = cv2.waitKey(0)
+    k = cv2.waitKey(1)
     if k == ord('s'):  # wait for s
         r = cv2.selectROI(frame)
-        print(r)
+        # print(r)
         imCrop = frame[int(r[1]):int(r[1] + r[3]), int(r[0]):int(r[0] + r[2])]
         crop_x = int(r[0])
         crop_y = int(r[1])
         crop_x1 = int(r[0] + r[2])
         crop_y1 = int(r[1] + r[3])
+        print(f"rectangle coordinates are:")
+        print(f"top_x:{crop_x}")
+        print(f"top_y:{crop_y}")
+        print(f"bottom_x:{crop_x1}")
+        print(f"bottom_y:{crop_y1}")
         rectangle_flag = 1
         cv2.destroyAllWindows()
 
@@ -67,15 +77,17 @@ while True:
         break
 
     if rectangle_flag == 1:
-        # cv2.rectangle(frame,(384,0),(510,128),(0,255,0),3)
         cv2.rectangle(frame, (crop_x, crop_y), (crop_x1, crop_y1), (0, 255, 0), 3)
-        # framei= frame[y:y + h, x:x + w]
+        
     if mouse_flag == 2:
         cv2.line(frame, (ix, iy), (vx, vy), (255, 0, 0), 5)
 
+    cv2.putText(frame, "press 's' to select ROI from video feed",(20,50),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),1,cv2.LINE_AA)
+    cv2.putText(frame,"then press 'enter' to save it",(20,80),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),1,cv2.LINE_AA)
+    cv2.putText(frame, "press 'l' to draw line and 'enter to save it",(20,120),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),1,cv2.LINE_AA)
     cv2.imshow('frame', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-# vc.release()
+vs.release()
 cv2.destroyAllWindows()

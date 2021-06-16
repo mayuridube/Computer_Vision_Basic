@@ -2,6 +2,10 @@ import numpy as np
 import cv2
 
 
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+# video file name 
+out = cv2.VideoWriter('./output.avi', fourcc, 20.0, (640, 480))
+    
 def capture():
     # '0' is for usb camera
     cap = cv2.VideoCapture(0)
@@ -9,12 +13,14 @@ def capture():
         while True:
             # Capture frame-by-frame
             ret, frame = cap.read()
+            cv2.resize(frame, (640, 480))
 
             # Display the resulting frame
             cv2.imshow('frame', frame)
 
             # write the frame
-            write_video(frame)
+            out.write(frame)
+
 
             # press q to exit
             if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -26,12 +32,6 @@ def capture():
     except:
         print("ERROR")
 
-
-def write_video(frame):
-    fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    out = cv2.VideoWriter('./output.avi', fourcc, 20.0, (640, 480))
-    # write the flipped frame
-    out.write(frame)
 
 
 if __name__ == '__main__':
